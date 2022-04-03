@@ -36,6 +36,11 @@ window.onload = function() {
         listupnewgood();
     })    
 }
+// 휴지통 아이콘 클릭 시 삭제
+function getridof() {
+    const firstlist = document.querySelector('.list');
+    firstlist.remove();
+}
 
 /* 상품 업로드하는 함수 내용 .plusticon에 Attribute로 onclick = "listupgoods()"넣어야함
 function listupgoods() {
@@ -58,26 +63,14 @@ function listupgoods() {
     trashicon.className = "fa fa-trash";
     trashicon.setAttribute('aria-hidden', 'true');
     trashclick.appendChild(trashicon);
-    
-
 }
 */
-
-
-function getridof() {
-    const firstlist = document.querySelector('.list');
-    firstlist.remove();
-}
-
-
-
 
 /* 아이콘 클릭 시 리스트에 상품명 추가
 function plusButton() {
     const plusIcon = document.getElementsByClassName('fa-plus-circle');
     plusIcon.addEventListener('click', ()=> {
         document.querySelector('.list').innerHtml="출력";
-        
     })
 }
 */
